@@ -1,10 +1,20 @@
+
+/* CLASSES BACKGROUND FOR EACH CATEGORIES */
+
+.bg-notify {background-color: #8EDAFC;}
+.bg-personal {background-color: #EAEAEA;}
+
+/* CSS RESET  */
 * {
   margin : 0 ; 
   padding : 0 ; 
   box-sizing : border-box ; 
 
 }
+
 body {background-color: #D7DBD6;}
+
+
 
 .main-container {
     background: #000;
@@ -13,8 +23,10 @@ body {background-color: #D7DBD6;}
     position: relative;
 }
 
+
+/* green div separator in the background */
 .green-div {
-    height: 200px;
+    height: 145px;
     background: #009688;
     position: absolute;
     top: 0;
@@ -22,6 +34,9 @@ body {background-color: #D7DBD6;}
     right: 0;
 }
 
+
+
+/* resizing all images (almost all of them are user images) */
 img {
     width: 55px;
     height: 55px;
@@ -29,8 +44,19 @@ img {
 }
 
 
-.user-personal {
-    background: #EAEAEA;
-    padding: 0.4rem;
-    display: flex;
+
+/* font awesome icons styling */
+i.fa-lg {
+    color: #B1B1B1;
+}
+
+i.fa-bell-slash {
+    color: #8EDAFC;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    line-height: 45px;
+
 }
