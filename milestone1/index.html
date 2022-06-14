@@ -63,11 +63,11 @@
                     </div>
 
                     <!-- Singler user that will be repeated with a V-FOR -->
-                    <div class="d-flex p-2 bg-personal align-items-center justify-content-between">
+                    <div class="d-flex p-2 bg-light align-items-center justify-content-between border-bottom" v-for="(contatto,i) in contatti">
                         <div class="user-info d-flex">
-                            <img src="../img/avatar_1.jpg" alt="">
+                            <img :src="`../img/avatar${contatto.avatar}.jpg`" :alt="`Immagine profilo di ${contatto.name}`">
                             <div class="align-self-center px-2">
-                                <span class="fw-500">Michele</span>
+                                <span class="fw-500">{{contatto.name}}</span>
                                 <div class="text-secondary last-message">Ultimo messaggio inviato</div>
                             </div>
                         </div>
@@ -125,21 +125,6 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 text-right">
-                                    <div class="message sent d-inline-block">
-                                        messaggio
-                                    </div>
-                                </div>
-                                <div class="col-12 text-right">
-                                    <div class="message sent d-inline-block">
-                                        messaggio
-                                    </div>
-                                </div>
-                                <div class="col-12 text-left">
-                                    <div class="message received d-inline-block">
-                                        messaggio
-                                    </div>
-                                </div>
                                
                               
                             </div>
