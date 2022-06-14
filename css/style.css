@@ -80,3 +80,30 @@ div.last-message {
 .chat-field {
     background-image: url(../img/mine.jpg);
 }
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+
+.message {
+   border-radius: 8px;
+    font-weight: 400;
+    padding : 1rem 2rem;
+    text-align: left;
+    width: 230px;
+    margin: 0.5rem;
+}
+
+.message.sent {
+    background-color: #D5F9BA;
+}
+
+.message.received {
+    background-color: #fff;
+
+}
