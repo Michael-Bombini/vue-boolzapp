@@ -3,6 +3,8 @@
 
 .bg-notify {background-color: #8EDAFC;}
 .bg-personal {background-color: #EAEAEA;}
+.bg-active {background-color: #d4d2d2;}
+.fw-500 {font-weight: 500;}
 
 /* CSS RESET  */
 * {
@@ -17,7 +19,7 @@ body {background-color: #D7DBD6;}
 
 
 .main-container {
-    background: #000;
+
     height: 95vh;
     margin: 2.5vh auto;
     position: relative;
@@ -59,4 +61,13 @@ i.fa-bell-slash {
     text-align: center;
     line-height: 45px;
 
+}
+
+
+
+/* users information styling */
+
+div.last-message {
+    font-size: 12px;
+    opacity: 0.7;
 }
