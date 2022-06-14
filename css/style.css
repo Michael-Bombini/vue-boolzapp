@@ -1,9 +1,11 @@
 
-/* CLASSES BACKGROUND FOR EACH CATEGORIES */
+/* CLASSES BACKGROUND FOR EACH CATEGORIES AND UTILITIES */
 
 .bg-notify {background-color: #8EDAFC;}
 .bg-personal {background-color: #EAEAEA;}
 .fw-500 {font-weight: 500;}
+.position-relative {position: relative;}
+
 
 /* CSS RESET  */
 * {
@@ -106,4 +108,12 @@ div.last-message {
 .message.received {
     background-color: #fff;
 
+}
+
+
+.write-message {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

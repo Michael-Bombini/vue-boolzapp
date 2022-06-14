@@ -181,6 +181,7 @@ new Vue({
 
         contatti,
         searchingUser : "",
+        newMessage : "",
         
      },
 
