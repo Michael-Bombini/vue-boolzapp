@@ -3,7 +3,6 @@
 
 .bg-notify {background-color: #8EDAFC;}
 .bg-personal {background-color: #EAEAEA;}
-.bg-active {background-color: #d4d2d2;}
 .fw-500 {font-weight: 500;}
 
 /* CSS RESET  */
@@ -68,6 +67,16 @@ i.fa-bell-slash {
 /* users information styling */
 
 div.last-message {
-    font-size: 12px;
-    opacity: 0.7;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+
+
+
+
+/* Chat field */
+
+.chat-field {
+    background-image: url(../img/mine.jpg);
 }

@@ -11,7 +11,9 @@ new Vue({
     el: "#app",
 
 
-    data: { },
+    data: {
+        searchingUser : "",
+     },
 
     methods: {},
 
