@@ -242,8 +242,11 @@ new Vue({
       },
 
       menuMessaggio : function(indexMessage){
+        if(this.messaggiCorrenti[indexMessage].status === "sent")
         this.messaggiCorrenti.splice(indexMessage , 1);
-        console.log(indexMessage);
+        
+
+       
 
       }
 
