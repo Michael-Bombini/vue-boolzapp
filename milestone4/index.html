@@ -60,7 +60,7 @@
                     <!-- Search user -->
                     <div class="d-flex py-2 px-3 align-items-center gap-2">
                         <i class="fa-solid text-secondary fa-magnifying-glass"></i>
-                        <input type="text" name="" id="" class="w-100 border-0 py-2 px-3" placeholder="Cerca o inizia una nuova chat" v-model="searchingUser">
+                        <input type="text" name="" id="" class="w-100 border-0 py-2 px-3" placeholder="Cerca o inizia una nuova chat" v-model="searchingUser" @keypress="cercaContatto()">
                     </div>
 
                     <!-- Singler user that will be repeated with a V-FOR -->
