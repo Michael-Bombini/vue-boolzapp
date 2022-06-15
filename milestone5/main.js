@@ -185,7 +185,7 @@ new Vue({
         currentName : "Michele",
         id : 0,
         isMenuShowed : false,
-        
+        lastAccess : "Ultimo accesso oggi alle 12:00",
      },
 
     methods: {
@@ -220,8 +220,8 @@ new Vue({
             status: "received",
   
           });
-
         },1000)
+        this.lastAccess = "Online";
         this.newMessage = "";
         
       },
