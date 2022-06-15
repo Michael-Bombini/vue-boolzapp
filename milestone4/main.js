@@ -226,12 +226,14 @@ new Vue({
 
       cercaContatto : function(){
         const contattoInserito = this.searchingUser;
+        contattoInserito.toLowerCase();
         // console.log(contattoInserito);
         this.contatti.filter(contatto => {
             if(contatto.name.toLowerCase().includes(contattoInserito))
               contatto.visible = true;
               else
                 contatto.visible = false;
+                
             // if(contatto.visible === false)
             //   console.log(contatto.name)
               
