@@ -246,7 +246,7 @@ new Vue({
         if(this.messaggiCorrenti[indexMessage].status === "sent")
         this.messaggiCorrenti.splice(indexMessage , 1);
         
-
+        
        
 
       }

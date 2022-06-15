@@ -69,11 +69,11 @@
                             <img :src="`../img/avatar${contatto.avatar}.jpg`" :alt="`Immagine profilo di ${contatto.name}`">
                             <div class="align-self-center px-2">
                                 <span class="fw-500">{{contatto.name}}</span>
-                                <div class="text-secondary last-message">{{contatto.messages[0].message}}</div>
+                                <div class="text-secondary last-message">{{contatto.messages[contatto.messages.length-1].message}}</div>
                             </div>
                         </div>
                         <div class="user-buttons px-2 d-flex gap-4 align-self-start last-message">
-                            12:00
+                            {{contatto.messages[contatto.messages.length-1].date}}
                         </div>
                     </div>
                     
