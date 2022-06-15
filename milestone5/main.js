@@ -244,14 +244,17 @@ new Vue({
       },
 
       menuMessaggio : function(indexMessage){
-        if(this.messaggiCorrenti[indexMessage].status === "sent")
-        this.messaggiCorrenti.splice(indexMessage , 1);
+        this.isMenuShowed = !this.isMenuShowed;
         
         
        
 
-      }
+      },
 
+      eliminaMenuMessaggio : function(indexMessage){
+        if(this.messaggiCorrenti[indexMessage].status === "sent")
+        this.messaggiCorrenti.splice(indexMessage , 1);
+      }
 
 
     
