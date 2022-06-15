@@ -64,7 +64,7 @@
                     </div>
 
                     <!-- Singler user that will be repeated with a V-FOR -->
-                    <div class="d-flex p-2 align-items-center justify-content-between border-bottom" v-for="(contatto,i) in contatti" @click="stampa(i)" :class="{'bg-personal' : i==id }">
+                    <div class="d-flex p-2 align-items-center justify-content-between border-bottom" v-for="(contatto,i) in contatti" @click="stampa(i)" :class="{'bg-personal' : i==id , 'd-none' : !contatto.visible}">
                         <div class="user-info d-flex">
                             <img :src="`../img/avatar${contatto.avatar}.jpg`" :alt="`Immagine profilo di ${contatto.name}`">
                             <div class="align-self-center px-2">
