@@ -198,32 +198,32 @@ new Vue({
      
       },
 
-      pushaMessaggio : function()
-      {
-        const posUser = this.id;
+      // pushaMessaggio : function()
+      // {
+      //   const posUser = this.id;
 
-        const giorno = new Date();
-        const dataCorrente = giorno.getDate()+"/"+(giorno.getMonth()+1)+"/"+giorno.getFullYear()+"  " + giorno.getHours()+":"+giorno.getMinutes()+":"+giorno.getSeconds();
-          contatti[posUser].messages.push({
-          date: dataCorrente,
-          message: this.newMessage,
-          status: "sent",
+      //   const giorno = new Date();
+      //   const dataCorrente = giorno.getDate()+"/"+(giorno.getMonth()+1)+"/"+giorno.getFullYear()+"  " + giorno.getHours()+":"+giorno.getMinutes()+":"+giorno.getSeconds();
+      //     contatti[posUser].messages.push({
+      //     date: dataCorrente,
+      //     message: this.newMessage,
+      //     status: "sent",
 
-        });
-        //After one second the asynchronous function will push in the contatti a message with the text "OK"
-        //and the status received that will be customized with the v-bind classes
-        setTimeout(function(){
-          contatti[posUser].messages.push({
-            date: dataCorrente,
-            message: "OK",
-            status: "received",
+      //   });
+      //   //After one second the asynchronous function will push in the contatti a message with the text "OK"
+      //   //and the status received that will be customized with the v-bind classes
+      //   setTimeout(function(){
+      //     contatti[posUser].messages.push({
+      //       date: dataCorrente,
+      //       message: "OK",
+      //       status: "received",
   
-          });
+      //     });
 
-        },1000)
-        this.newMessage = "";
+      //   },1000)
+      //   this.newMessage = "";
         
-      },
+      // },
 
 
     
