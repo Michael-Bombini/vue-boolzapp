@@ -5,7 +5,7 @@
 .bg-personal {background-color: #EAEAEA;}
 .fw-500 {font-weight: 500;}
 .position-relative {position: relative;}
-
+.float-left { float: left; }
 
 /* CSS RESET  */
 * {
@@ -127,3 +127,5 @@ div.last-message {
     font-size: 11px;
     opacity: 0.7;
 }
+
+
