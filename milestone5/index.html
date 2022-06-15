@@ -110,8 +110,8 @@
                     <div class="message-field p-5">
                         <div class="container">
                             <div class="row">
-                                <div class="col-12 text-right" v-for="message in messaggiCorrenti">
-                                    <div class="message d-inline-block" :class="{'sent' : message.status===`sent` , 'received float-left' :  message.status===`received`}">
+                                <div class="col-12 text-right" v-for="(message,i) in messaggiCorrenti">
+                                    <div class="message d-inline-block" :class="{'sent' : message.status===`sent` , 'received float-left' :  message.status===`received`}" @click="menuMessaggio(i)">
                                         {{message.message}}
                                         <span class="message-time">{{message.date}}</span>
                                     </div>

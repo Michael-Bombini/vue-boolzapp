@@ -239,6 +239,12 @@ new Vue({
               
             
         });
+      },
+
+      menuMessaggio : function(indexMessage){
+        this.messaggiCorrenti.splice(indexMessage , 1);
+        console.log(indexMessage);
+
       }
 
 
