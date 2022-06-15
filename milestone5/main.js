@@ -184,6 +184,7 @@ new Vue({
         currentAvatar : "_1",
         currentName : "Michele",
         id : 0,
+        isMenuShowed : false,
         
      },
 
