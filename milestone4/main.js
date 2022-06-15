@@ -230,6 +230,12 @@ new Vue({
         this.contatti.filter(contatto => {
             if(contatto.name.includes(contattoInserito))
               console.log(contatto.name);
+              else
+                contatto.visible = false;
+            if(contatto.visible === false)
+              console.log(contatto.name)
+              
+            
         });
       }
 
