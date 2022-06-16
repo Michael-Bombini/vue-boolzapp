@@ -204,7 +204,7 @@ new Vue({
         const posUser = this.id;
 
         const giorno = new Date();
-        const dataCorrente = giorno.getDate()+"/"+(giorno.getMonth()+1)+"/"+giorno.getFullYear()+"  " + giorno.getHours()+":"+giorno.getMinutes()+":"+giorno.getSeconds();
+        const dataCorrente = (giorno.getHours()+":"+giorno.getMinutes()+":"+giorno.getSeconds());
           contatti[posUser].messages.push({
           date: dataCorrente,
           message: this.newMessage,
