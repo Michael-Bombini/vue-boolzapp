@@ -264,9 +264,10 @@ new Vue({
 
 
       nuovoContatto : function(){
+        const immagineNumero = Math.floor(Math.random() * 8)+1;
         this.contatti.push( {
           name: this.nuovoContattoNome,
-          avatar: "_8",
+          avatar: `_${immagineNumero}`,
           visible: true,
           messages: [
             {
