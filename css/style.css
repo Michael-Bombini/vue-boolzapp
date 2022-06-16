@@ -134,11 +134,11 @@ div.last-message {
 }
 
 .menu-tendina {
-    position: relative;
+    position: absolute;
     display: inline-block;
-    position: relative;
-    top: -55px;
-    left: -22px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
     background: #fff;
     padding: 0.5rem;
     border-radius: 10px;
