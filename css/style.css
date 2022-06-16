@@ -136,13 +136,3 @@ div.last-message {
     padding: 0.5rem;
     border-radius: 10px;
 }
-
-
-.new-contact {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    padding: 0.3rem;
-    margin: 0.5rem;
-}
