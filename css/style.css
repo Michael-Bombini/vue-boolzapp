@@ -113,12 +113,12 @@ div.last-message {
 }
 
 
-.write-message {
+/* .write-message {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-}
+} */
 
 .message-time {
     position: absolute;

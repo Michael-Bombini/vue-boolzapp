@@ -213,10 +213,15 @@ new Vue({
         });
         //After one second the asynchronous function will push in the contatti a message with the text "OK"
         //and the status received that will be customized with the v-bind classes
+        const listaPossibiliMessaggi = ["Ok" , "Ciao" , "No" , "Si" , "Buonasera" , "Buongiorno" , "A domani" , "A dopo" , "Alla grande" , "Tutto bene" , 
+        "Grazie a te", "Molto male" , "Ci vediamo" , "Arrivederci" , "Addio" , "Buon fine settimana!"];
+        
+        const indiceMessaggio = (Math.floor(Math.random() * listaPossibiliMessaggi.length-1) + 1)
+
         setTimeout(function(){
           contatti[posUser].messages.push({
             date: dataCorrente,
-            message: "OK",
+            message: listaPossibiliMessaggi[indiceMessaggio],
             status: "received",
   
           });

@@ -91,7 +91,7 @@
                 (This col contains (the relative user chat ) the contacts and a field to write messages)
                 -->
 
-                <div class="col-8 flex-grow-1 flex-shrink-0 bg-success p-0 chat-field position-relative">
+                <div class="col-8 flex-grow-1 flex-shrink-0 bg-success p-0 chat-field position-relative d-flex flex-column">
                     <div class="d-flex p-2 bg-personal align-items-center justify-content-between">
                         <div class="user-info d-flex">
                             <img :src="`../img/avatar${currentAvatar}.jpg`" alt="">
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                     
-                    <div class="message-field p-5">
+                    <div class="message-field  flex-grow-1">
                         <div class="container">
                             <div class="row">
                                 <div class="col-12 text-right col-messaggi" v-for="(message,i) in messaggiCorrenti">
