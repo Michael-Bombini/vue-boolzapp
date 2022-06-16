@@ -115,7 +115,7 @@
                                         {{message.message}}
                                         <span class="message-time">{{message.date}}</span>
                                     </div>
-                                    <div class="menu-tendina" :class="{'d-none' : !isMenuShowed}" @click="eliminaMenuMessaggio(i)">
+                                    <div class="menu-tendina" :class="{'d-none' : !isMenuShowed}" @click="eliminaMenuMessaggio(i)" v-if="message.status==='sent'">
                                         elimina messaggio
                                     </div>
                                 </div>
