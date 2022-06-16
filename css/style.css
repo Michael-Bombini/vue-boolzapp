@@ -83,6 +83,12 @@ div.last-message {
     background-image: url(../img/mine.jpg);
 }
 
+.overflow-height {
+    height: 95vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 .text-right {
     text-align: right;
 }

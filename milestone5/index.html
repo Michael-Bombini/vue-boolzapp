@@ -24,12 +24,12 @@
         <div class="container main-container">
 
             <!-- two rows of the web app left side and right side -->
-            <div class="row h-100">
+            <div class="row">
 
                 <!-- CONTACTS FIELD  
                 (This col contains (the user informations ) the contacts and their informations)
                 -->
-                <div class="col-4 flex-grow-1 flex-shrink-0 p-0 bg-light">
+                <div class="col-4 flex-grow-1 flex-shrink-0 p-0 bg-light overflow-height">
 
                     <!-- Personal information  -->
                     <div class="d-flex p-2 bg-personal align-items-center justify-content-between">
@@ -96,7 +96,7 @@
                 (This col contains (the relative user chat ) the contacts and a field to write messages)
                 -->
 
-                <div class="col-8 flex-grow-1 flex-shrink-0 bg-success p-0 chat-field position-relative d-flex flex-column">
+                <div class="col-8 flex-grow-1 flex-shrink-0 bg-success p-0 chat-field position-relative d-flex flex-column overflow-height">
                     <div class="d-flex p-2 bg-personal align-items-center justify-content-between">
                         <div class="user-info d-flex">
                             <img :src="`../img/avatar${currentAvatar}.jpg`" alt="">
