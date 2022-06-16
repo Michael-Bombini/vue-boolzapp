@@ -186,6 +186,7 @@ new Vue({
         id : 0,
         isMenuShowed : false,
         lastAccess : "Ultimo accesso oggi alle 12:00",
+        nuovoContattoNome : "",
      },
 
     methods: {
@@ -264,24 +265,12 @@ new Vue({
 
       nuovoContatto : function(){
         this.contatti.push( {
-          name: "Davide",
+          name: this.nuovoContattoNome,
           avatar: "_8",
           visible: true,
           messages: [
             {
-              date: "10/01/2020 15:30:55",
-              message: "Ciao, andiamo a mangiare la pizza stasera?",
-              status: "received",
-            },
-            {
-              date: "10/01/2020 15:50:00",
-              message: "No, l'ho già mangiata ieri, ordiniamo sushi!",
-              status: "sent",
-            },
-            {
-              date: "10/01/2020 15:51:00",
-              message: "OK!!",
-              status: "received",
+          
             },
           ],
         },);
